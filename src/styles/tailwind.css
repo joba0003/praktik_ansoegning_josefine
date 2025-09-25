@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
@@ -6,45 +6,89 @@
 @import "tailwindcss-intersect";
 
 @font-face {
-  font-family: 'Honk';
-  src: url('/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+  font-family: "Honk";
+  src: url("/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Domine';
-  src: url('/fonts/Domine-Regular.ttf') format('truetype');
+  font-family: "Domine";
+  src: url("/fonts/Domine-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik Bubbles";
+  src: url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 }
 
 @theme {
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00E4F5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006D75;
-  --color-secondary-400: #F5E400;
-  --color-secondary-500: #F5A600;
-  --color-secondary-600: #F57A00;
+  --color-primary: #301c1b;
+  --color-accent: #31dd9e;
+  --color-secondary: #ffedab;
+  --color-text: #ffffff;
 
   /*Typografi */
-  --font-display: 'Honk', monospace;
-  --font-sans: 'Quicksand', sans-serif;
-  --font-serif: 'Domine', serif;
+  --font-display: "Honk", monospace;
+  --font-sans: "Quicksand", sans-serif;
+  --font-serif: "Domine", serif;
 }
 
 @layer base {
-
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "rubik bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  p {
+    font-family: "mate SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  @media (min-width: 800px) {
+    p {
+      font-size: clamp(16px, 2vw, 18px);
+    }
+    h1 {
+      font-size: clamp(36px, 6vw, 48px);
+    }
+    h2 {
+      font-size: clamp(24px, 4vw, 32px);
+    }
+    h3 {
+      font-size: clamp(18px, 3vw, 24px);
+    }
+  }
 }
 
-@layer components{
-
+@layer components {
 }
 
-@layer utilities{
-  
+@layer utilities {
 }

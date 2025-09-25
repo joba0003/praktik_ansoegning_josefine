@@ -12,10 +12,17 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 		<script defer src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+			</style>
+			
+				
 	</head>
-	<body class="">
+	<body class="bg-primary">
 		
-		<Header></Header>
+		
 		
 		<slot />
 
