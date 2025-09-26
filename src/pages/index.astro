@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import "../styles/tailwind.css";
 ---
-<MainLayout title="Titel">
+<MainLayout title="Forside">
   <!-- Topbillede og titel -->
   <div class="h-screen mb-12 text-center">
     <img src="/josefine.svg" alt="billede 1" class="m-4 w-100 mx-auto lg:w-200 lg:my-12" />
@@ -187,4 +187,87 @@ import "../styles/tailwind.css";
       </div>
     </div>
   </div>
+
+  <div class="mt-6 lg:grid lg:grid-cols-2">
+<div>
+	<img src="/about.svg" alt="">
+<div class="border-4 border-secondary w-full">
+	<h3 class="text-white mb-2 p-4">
+		What I wanna learn
+	</h3>
+	<hr class="w-full my-2 border-t-4 border-secondary" />
+	<div class="space-y-2 text-white p-4">
+		<p>
+			Jeg vil  meget gerne blive stærkere i at overføre fysisk kunst til grafisk kunst, og blive endnu stærkere i adobe pakken.
+			Jeg vil også gerne dykke mere ned i SoMe produktion og lære at komprimere information til små opslag. 
+	</p>
+</div>
+</div>
+
+</div>
+<div class="border-4 border-secondary w-full">
+	<h3 class="text-white mb-2 p-4">
+		What I can offer
+	</h3>
+	<hr class="w-full my-2 border-t-4 border-secondary" />
+	<div class="space-y-2 text-white p-4">
+		<p>
+		Jeg vil kunne tage mig af illustrationer og design på en kreativ og udfordrende måde. Jeg er især stærk i abstrakt maleri og linoleumstryk samt keramik, som gør jeg har en livlig og konkret forståelse af farvekombinationer og udtryk. 
+Især mit arbejde med tryk har givet mig redskaber til at udtrykke en følelse eller budskab på en gennemskuelig måde.
+
+Jeg er også stærk i indholdsproduktion og SoMe. Jeg elsker at lave forsider og plakater til opslag og finde på indhold. En af mine hobbyer er at tage spændende billeder, der fortæller en historie eller er visuelt æstetiske. 
+Jeg har i mange år malet maleri og lavet forskellige udstillinger igennem årene. Nedenfor er et galleri med et udpluk af de værker jeg har lavet gennem tiderne.
+	</p>
+</div>
+</div>
+<div class="w-screen py-8 border-4 border-secondary mt-6">
+	<!-- Galleri titel -->
+	<img src="/galleri.svg" alt="Galleri" class="mx-auto mb-6">
+  
+	<!-- Billedgrid -->
+	<div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-none px-2 ">
+	  <img src="/gal1.png" alt="Billede 1" class="w-full h-auto">
+	  <img src="/gal2.png" alt="Billede 2" class="w-full h-auto">
+	  <img src="/gal3.png" alt="Billede 3" class="w-full h-auto">
+	  <img src="/gal4.png" alt="Billede 4" class="w-full h-auto">
+	  <img src="/gal5.png" alt="Billede 5" class="w-full h-auto">
+	  <img src="/gal6.png" alt="Billede 6" class="w-full h-auto">
+	  <img src="/gal7.png" alt="Billede 7" class="w-full h-auto">
+	  <img src="/gal8.png" alt="Billede 8" class="w-full h-auto">
+	  <img src="/gal9.png" alt="Billede 9" class="w-full h-auto">
+	  <img src="/gal10.png" alt="Billede 10" class="w-full h-auto">
+	  <img src="/gal11.png" alt="Billede 11" class="w-full h-auto">
+	  <img src="/gal12.png" alt="Billede 12" class="w-full h-auto">
+	</div>
+  </div>
+  </div>
+  
+  <div class="border-4 border-secondary w-full mt-6">
+	<img src="/web.svg"  alt="">
+
+	<div class="p-4">
+<h3 class="text-white">Webløsning instantday:</h3>
+<a class="text-white animate-pulse" href="https://instant-dayy.netlify.app/">https://instant-dayy.netlify.app/</a>
+
+<h3 class="text-white">Webløsning Maksofilm</h3>
+<a class="text-white animate-pulse" href="https://makso-film.netlify.app/">https://makso-film.netlify.app/</a>
+<h3 class="text-white">Portfolio 1. semester</h3>
+<a class="text-white animate-pulse" href="https://68d3ee52290388551910c649--portfolio1sem.netlify.app">https://68d3ee52290388551910c649--portfolio1sem.netlify.app</a>
+
+	</div>
+  </div>
+
+  <div class="border-4 border-secondary w-full mt-6">
+	<div class="m-4">
+	<h2 class="text-white mb-6">Contact:</h2>
+	<h3 class="text-white">Tlf:</h3>
+<p class="text-white">+45 26 17 93 00</p>
+<h3 class="text-white">Mail:</h3>
+<p class="text-white">Josefinebankehoeg@gmail.com</p>
+</div>
+  </div>
+  
+  
+
+
 </MainLayout>
