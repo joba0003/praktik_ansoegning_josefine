@@ -4,13 +4,14 @@ import { Image } from "astro:assets";
 import "../styles/tailwind.css";
 ---
 <MainLayout title="Titel">
-  <div>
-    <img src="/josefine.svg" alt="billede 1" class="w-100 mx-auto lg:mx-0 m-6" />
+  <div class="mb-12">
+    <img src="/josefine.svg" alt="billede 1" class="w-100 mx-auto lg:w-300" />
     <h2 class="text-center text-text font-bold">MULTIMEDIEDESIGNER</h2>
-    <img src="/cvpic1.png" alt="billede 1" class="w-80 mx-auto lg:mx-0 m-6" />
+    <img src="/cvpic1.png" alt="billede 1" class="w-50 mx-auto mt-4
+	lg:hidden" />
   </div>
 
-  <img src="CV.svg" alt="" class="block md:hidden" />
+  <img src="CV.svg" alt="" class="w-50 mx-auto block md:hidden" />
 
   <div class="lg:grid lg:grid-cols-3 lg:grid-rows-4">
     <!-- første del -->
@@ -31,7 +32,7 @@ import "../styles/tailwind.css";
           <p class="text-white">
             Udstilling i Sydhavn kirke, med St:art og Boks, som kurator og med maleri og tegninger
           </p>
-          <p class="text-white my-4">2023</p>
+          <p class="text-white">2023</p>
           <p class="text-white">Udstilling i Blågårds Bibliotek under Kulturnatten med maleri og skulptur</p>
         </div>
       </div>
@@ -187,10 +188,12 @@ import "../styles/tailwind.css";
           <p class="text-white">2016-2019</p>
           <p class="text-white"> Kreativ STX med valgfag som musik og teater</p>
           <p class="text-white my-4">Art History</p>
+		  <p class="text-white">2020-2021</p>
           <p class="text-white">
             Havde 2 kreative semestre på dette studie på Københavns Universitet, hvor jeg lærte kritisk tænkning og analyse af kunstværker og historien bag
           </p>
           <p class="text-white my-4">Welding</p>
+		  <p class="text-white">2022-2022</p>
           <p class="text-white">
             Smede grundforløbet på TEC i Ballerup. Her lærte jeg at være tålmodig, da svejsninger tager tid og lærte også meget om samarbejde og det at hjælpe hinanden med udfordrende opgaver
           </p>
